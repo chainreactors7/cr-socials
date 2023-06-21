@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 7, 32);
+    color: rgb(240,240,240);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background-canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(240,240,240);
+}
+
+.share-button svg {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240,240,240);
+}
+
+.tile {
+    width: 100%;
+    background-color: rgb(37,37,37);
+    margin: 7px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2ms;
+    transform: scale(1.02);
+}
+
+.icon {
+    margin: 4px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.tile-share-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius : 20px;
+    background-color: rgb(52,52,52);
+}
+
+.tile-share-button svg {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.image-container {
+    height: 96px;
+    width: 96px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
+}
+
+footer {
+    margin-top: auto;
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+    background-color: transparent;
+    font-size: small;
+    opacity: 0.75;
+    bottom: 0;
+    left: 0;
+}
+  
+footer:hover {
+    opacity: 1;
+}
+  
+footer a {
+    color: white;
+    text-decoration: none;
+}
